@@ -7,11 +7,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="fade-in">
-<!-- Кнопка переключения языка -->
+
 <div class="lang-switch">
     <button id="toggle-lang">EN</button>
 </div>
-
 
 <section class="hero">
     <div class="overlay"></div>
@@ -69,7 +68,6 @@
 <footer class="footer">© 2026 Urlab. Все права защищены.</footer>
 
 <script>
-// Сохранение языка и переключение
 const translations = {
     ru: {
         heroTitle: "Начните свой бизнес с<br>профессиональной регистрацией",
@@ -131,18 +129,17 @@ function setLanguage(lang) {
     document.getElementById("toggle-lang").innerText = lang === 'ru' ? 'EN' : 'RU';
 }
 
-// Проверка сохраненного языка при загрузке
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("loaded");
     const savedLang = localStorage.getItem('siteLang') || 'ru';
     setLanguage(savedLang);
 });
 
-// Переключение по кнопке
 document.getElementById("toggle-lang").addEventListener("click", () => {
     const current = localStorage.getItem('siteLang') || 'ru';
     setLanguage(current === 'ru' ? 'en' : 'ru');
 });
 </script>
+
 </body>
 </html>
