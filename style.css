@@ -214,11 +214,13 @@ body.loaded {
     margin-top: 15px;
 }
 
-/* Ссылка внутри телефона остаётся белой */
+
 .contact-cta .phone a {
-    color: white;           /* основной цвет текста */
-    text-decoration: none;  /* убираем подчеркивание */
+    color: white;                  
+    -webkit-text-fill-color: white;  /* строчка для айфона чтобы синим не было проверь сайт */
+    text-decoration: none;
 }
+
 
 .footer {
     background: #0d0d0d;
