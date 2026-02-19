@@ -212,7 +212,12 @@ body.loaded {
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
-    background: #43ad22;
+}
+
+/* Ссылка внутри телефона остаётся белой */
+.contact-cta .phone a {
+    color: white;           /* основной цвет текста */
+    text-decoration: none;  /* убираем подчеркивание */
 }
 
 .footer {
