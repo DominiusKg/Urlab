@@ -14,11 +14,10 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #c4161c, #ffffff); /* красный сверху, белый снизу */
-    color: #111; /* текст делаем темным, чтобы на белом был виден */
+    background: linear-gradient(to bottom, #ffffff, #c4161c); /* белый сверху, красный снизу */
+    color: #111;
     line-height: 1.6;
 }
-    
 
 body.loaded {
     opacity: 1;
@@ -49,13 +48,12 @@ body.loaded {
 header {
     text-align: center;
     padding: 80px 20px 40px;
-    position: relative;
 }
 
 header .logo {
-    width: 300px;        /* размер лого */
+    width: 200px;  /* новый размер */
     max-width: 80%;
-    margin-bottom: 30px;
+    display: block;
     opacity: 0;
     animation: fadeLogo 1.5s ease forwards;
 }
@@ -86,7 +84,7 @@ header .logo {
 }
 
 .contact-card .icon {
-    width: 40px;          /* размер контейнера */
+    width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -99,7 +97,6 @@ header .logo {
     object-fit: contain;
     display: block;
 }
-
 
 .contact-info span {
     display: block;
@@ -117,7 +114,6 @@ header .logo {
     color: #ccc;
 }
 
-/* сервисы */
 .services-container {
     width: 90%;
     max-width: 1200px;
@@ -129,7 +125,7 @@ header .logo {
 
 .service-card {
     position: relative;
-    height: 250px;       /* маленькая высота как раньше */
+    height: 250px;
     border-radius: 20px;
     overflow: hidden;
     background-size: cover;
@@ -148,22 +144,21 @@ header .logo {
 .card-content {
     background: rgba(0,0,0,0.6);
     width: 100%;
-    padding: 15px;      /* отступы поменьше */
+    padding: 15px;
     text-align: center;
 }
 
 .card-content h2 {
     margin-bottom: 8px;
-    font-size: 1.2em;   /* размер заголовка */
+    font-size: 1.2em;
     color: #fff;
 }
 
 .card-content p {
-    font-size: 0.9em;   /* размер текста */
+    font-size: 0.9em;
     color: #ddd;
 }
 
-/* кнопка назад */
 .back-btn {
     display: inline-block;
     margin: 20px auto 60px;
@@ -193,7 +188,6 @@ footer {
     .card-content h2 { font-size: 1em; }
     .card-content p { font-size: 0.85em; }
 }
-
 </style>
 </head>
 <body class="loaded">
@@ -202,9 +196,11 @@ footer {
     <button id="langBtn">EN</button>
 </div>
 
-<header>
+<header style="text-align: center; padding: 80px 20px 40px;">
     <a href="index.html">
-        <img src="images/logo.png" alt="Dominius Logo" class="logo">
+        <img src="images/logo.png" 
+             alt="Логотип" 
+             style="width: 300px; max-width: 80%; display: block; margin: 0 auto; opacity: 1;">
     </a>
 
     <div class="contact-grid">
@@ -216,56 +212,81 @@ footer {
             </div>
         </div>
         <div class="contact-card">
-    <div class="icon">
-        <img src="images/whatsApp_icon.png" alt="WhatsApp Logo">
-    </div>
-    <div class="contact-info">
-        <span id="whatsappText">WhatsApp</span>
-        <a id="whatsappLink" href="https://wa.me/0708747747" target="_blank">
-            +996 708747747
-        </a>
-    </div>
-</div>
+            <div class="icon">
+                <img src="images/whatsApp_icon.png" alt="WhatsApp Logo">
+            </div>
+            <div class="contact-info">
+                <span id="whatsappText">WhatsApp</span>
+                <a id="whatsappLink" href="https://wa.me/+996708747747" target="_blank">
+                    +996 708747747
+                </a>
+            </div>
+        </div>
 
         <div class="contact-card">
-    <div class="icon">
-        <img src="images/logo.png" alt="Instagram Logo">
-    </div>
-    <div class="contact-info">
-        <span id="instText">Instagram</span>
-        <a id="instLink" href="https://www.instagram.com/urlab.kg/" target="_blank">@Urlab.kg</a>
+            <div class="icon">
+                <img src="images/logo.png" alt="Instagram Logo">
+            </div>
+            <div class="contact-info">
+                <span id="instText">Instagram</span>
+                <a id="instLink" href="https://www.instagram.com/urlab.kg/" target="_blank">@Urlab.kg</a>
+            </div>
+        </div>
+         <div class="contact-card">
+        <div class="icon">🏢</div>
+        <div class="contact-info">
+            <span id="addressText">Адрес</span>
+            <a id="addressLink" href="https://2gis.kg/bishkek/geo/15763234351074280?m=74.583541%2C42.872744%2F19.42" target="_blank">
+                г. Бишкек, ул. Токтогула
+            </a>
+        </div>
     </div>
 </div>
-
-
     </div>
 </header>
 
-<div class="services-container">
-    <div class="service-card" style="background-image:url('images/fon.jpg');">
-        <div class="card-content">
+<div class="services-container" style="width: 90%; max-width: 1200px; margin: 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+
+    <!-- Карточка 1 -->
+<a href="service1.html" style="text-decoration: none;">
+    <div class="service-card" style="position: relative; height: 250px; border-radius: 20px; overflow: hidden; background-image: url('images/fon.jpg'); background-size: cover; background-position: center; display: flex; align-items: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: 0.3s;">
+        <div class="card-content" style="background: rgba(0,0,0,0.6); width: 100%; padding: 15px; text-align: center; color: #fff;">
             <h2 id="s1">Регистрация и сопровождение компаний</h2>
             <p id="s1t">Регистрация, открытие, перерегистрация и ликвидация ИП и ОсОО. Быстро и без ошибок.</p>
         </div>
     </div>
-    <div class="service-card" style="background-image:url('images/ur escort 2.jpg');">
-        <div class="card-content">
+</a>
+
+<!-- Карточка 2 -->
+<a href="service2.html" style="text-decoration: none;">
+    <div class="service-card" style="position: relative; height: 250px; border-radius: 20px; overflow: hidden; background-image: url('images/ur escort 2.jpg'); background-size: cover; background-position: center; display: flex; align-items: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: 0.3s;">
+        <div class="card-content" style="background: rgba(0,0,0,0.6); width: 100%; padding: 15px; text-align: center; color: #fff;">
             <h2 id="s2">Сопровождение в сфере недвижимости</h2>
             <p id="s2t">Юридическая поддержка при покупке, продаже и аренде недвижимости.</p>
         </div>
     </div>
-    <div class="service-card" style="background-image:url('images/taxes.jpg');">
-        <div class="card-content">
+</a>
+
+<!-- Карточка 3 -->
+<a href="service3.html" style="text-decoration: none;">
+    <div class="service-card" style="position: relative; height: 250px; border-radius: 20px; overflow: hidden; background-image: url('images/taxes.jpg'); background-size: cover; background-position: center; display: flex; align-items: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: 0.3s;">
+        <div class="card-content" style="background: rgba(0,0,0,0.6); width: 100%; padding: 15px; text-align: center; color: #fff;">
             <h2 id="s3">Нотариальные и бухгалтерские услуги</h2>
             <p id="s3t">Оформление земельных участков, управление имуществом и разрешение имущественных споров.</p>
         </div>
     </div>
-    <div class="service-card" style="background-image:url('images/private.jpg');">
-        <div class="card-content">
+</a>
+
+<!-- Карточка 4 -->
+<a href="service4.html" style="text-decoration: none;">
+    <div class="service-card" style="position: relative; height: 250px; border-radius: 20px; overflow: hidden; background-image: url('images/private.jpg'); background-size: cover; background-position: center; display: flex; align-items: flex-end; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: 0.3s;">
+        <div class="card-content" style="background: rgba(0,0,0,0.6); width: 100%; padding: 15px; text-align: center; color: #fff;">
             <h2 id="s4">Земельные и имущественные вопросы</h2>
             <p id="s4t">Регистрация земельных участков, управление имуществом и разрешение имущественных споров.</p>
         </div>
     </div>
+</a>
+
 </div>
 
 <div style="text-align:center;">
@@ -282,6 +303,8 @@ const translations = {
         phoneText: "Телефон",
         whatsappText: "WhatsApp",
         instText: "Instagram",
+        addressText: "Адрес",
+        addressLink: "https://2gis.kg/bishkek/geo/15763234351074280?m=74.583541%2C42.872744%2F19.42",
         s1: "Регистрация и сопровождение компаний",
         s1t: "Регистрация, открытие, перерегистрация и ликвидация ИП и ОсОО. Быстро и без ошибок.",
         s2: "Сопровождение в сфере недвижимости",
@@ -297,6 +320,8 @@ const translations = {
         phoneText: "Phone",
         whatsappText: "WhatsApp",
         instText: "Instagram",
+        addressText: "Address",
+        addressLink: "https://2gis.kg/bishkek/geo/15763234351074280?m=74.583541%2C42.872744%2F19.42",
         s1: "Company Registration & Support",
         s1t: "Registration, opening, re-registration and liquidation of sole proprietors and LLCs. Fast and error-free.",
         s2: "Real Estate Legal Support",
@@ -310,37 +335,42 @@ const translations = {
     }
 };
 
-let currentLang = "ru";
+let currentLang = localStorage.getItem('siteLang') || 'ru';
 
 function translatePage(lang) {
     const t = translations[lang];
     document.getElementById("phoneText").innerText = t.phoneText;
     document.getElementById("whatsappText").innerText = t.whatsappText;
     document.getElementById("instText").innerText = t.instText;
-    document.getElementById("s1").innerText = t.s1;
-    document.getElementById("s1t").innerText = t.s1t;
-    document.getElementById("s2").innerText = t.s2;
-    document.getElementById("s2t").innerText = t.s2t;
-    document.getElementById("s3").innerText = t.s3;
-    document.getElementById("s3t").innerText = t.s3t;
-    document.getElementById("s4").innerText = t.s4;
-    document.getElementById("s4t").innerText = t.s4t;
+    document.getElementById("addressText").innerText = t.addressText;
+    document.getElementById("addressLink").href = t.addressLink;
+
+    const serviceIds = ["s1","s2","s3","s4"];
+    const serviceTextIds = ["s1t","s2t","s3t","s4t"];
+    serviceIds.forEach((id,i)=> {
+        const el = document.getElementById(id);
+        if(el) el.innerText = t[id];
+    });
+    serviceTextIds.forEach((id,i)=> {
+        const el = document.getElementById(id);
+        if(el) el.innerText = t[id];
+    });
+
     document.getElementById("backText").innerText = t.backText;
     document.getElementById("footerText").innerText = t.footerText;
+
     document.getElementById("langBtn").innerText = lang === "ru" ? "EN" : "RU";
+
     currentLang = lang;
+    localStorage.setItem('siteLang', lang);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("loaded");
-    const savedLang = localStorage.getItem('siteLang') || 'ru';
-    translatePage(savedLang);
+    translatePage(currentLang);
 });
 
 document.getElementById("langBtn").addEventListener("click", () => {
     translatePage(currentLang === "ru" ? "en" : "ru");
 });
 </script>
-
-</body>
-</html>

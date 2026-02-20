@@ -122,7 +122,7 @@ body.loaded {
 }
 
 .logo {
-    width: 300px;
+    width: 200px;
     margin-bottom: 30px;
     animation: fadeLogo 1.5s ease forwards;
     opacity: 0;

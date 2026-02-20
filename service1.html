@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация и сопровождение компаний</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f5f5;
+            color: #222;
+        }
+        .header {
+            background: #0d0d0d; /* черный фон */
+            color: #fff;         /* белый текст */
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+        .service-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .service-detail h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service-detail h2 {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #0d0d0d;
+        }
+        .service-detail p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .service-detail ul {
+            margin-left: 20px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 id="header-title">Регистрация и сопровождение компаний</h1>
+        <div class="lang-switch">
+            <button id="toggle-lang">EN</button>
+        </div>
+    </div>
+
+    <div class="service-detail">
+        <p id="p1">Мы предоставляем полный спектр услуг по регистрации, открытию, перерегистрации и ликвидации ИП и ОсОО в Кыргызстане. Работаем быстро, без ошибок и бюрократии.</p>
+
+        <h2 id="h2-1">📌 Основные услуги</h2>
+        <ul id="ul-services">
+            <li>Выбор оптимальной организационно-правовой формы для вашего бизнеса;</li>
+            <li>Подготовка всех необходимых документов для регистрации;</li>
+            <li>Сопровождение процесса регистрации в государственных органах (Министерство юстиции, налоговая служба, госреестр);</li>
+            <li>Перерегистрация или ликвидация компаний при необходимости;</li>
+            <li>Консультации по налогообложению, отчетности и ведению бизнеса;</li>
+            <li>Полная юридическая поддержка на всех этапах.</li>
+        </ul>
+
+        <h2 id="h2-2">📍 Почему важно работать с профессионалами</h2>
+        <p id="p2">Ошибки в документах или неправильная подача могут привести к отказу в регистрации, штрафам или потерям времени. Наши специалисты знают актуальное законодательство Кыргызстана и минимизируют все риски.</p>
+
+        <h2 id="h2-3">💡 Наш подход</h2>
+        <p id="p3">Мы работаем с индивидуальными предпринимателями и компаниями, учитываем все нюансы законодательства и взаимодействуем с государственными органами от вашего имени. Это позволяет безопасно и быстро открыть компанию и сосредоточиться на развитии бизнеса.</p>
+
+        <a class="back-link" href="index.html" id="back-link">← Вернуться на главную</a>
+    </div>
+
+<script>
+const translations = {
+    ru: {
+        headerTitle: "Регистрация и сопровождение компаний",
+        p1: "Мы предоставляем полный спектр услуг по регистрации, открытию, перерегистрации и ликвидации ИП и ОсОО в Кыргызстане. Работаем быстро, без ошибок и бюрократии.",
+        h2_1: "📌 Основные услуги",
+        ulServices: [
+            "Выбор оптимальной организационно-правовой формы для вашего бизнеса;",
+            "Подготовка всех необходимых документов для регистрации;",
+            "Сопровождение процесса регистрации в государственных органах (Министерство юстиции, налоговая служба, госреестр);",
+            "Перерегистрация или ликвидация компаний при необходимости;",
+            "Консультации по налогообложению, отчетности и ведению бизнеса;",
+            "Полная юридическая поддержка на всех этапах."
+        ],
+        h2_2: "📍 Почему важно работать с профессионалами",
+        p2: "Ошибки в документах или неправильная подача могут привести к отказу в регистрации, штрафам или потерям времени. Наши специалисты знают актуальное законодательство Кыргызстана и минимизируют все риски.",
+        h2_3: "💡 Наш подход",
+        p3: "Мы работаем с индивидуальными предпринимателями и компаниями, учитываем все нюансы законодательства и взаимодействуем с государственными органами от вашего имени. Это позволяет безопасно и быстро открыть компанию и сосредоточиться на развитии бизнеса.",
+        backLink: "← Вернуться на главную",
+        toggleBtn: "EN"
+    },
+    en: {
+        headerTitle: "Company Registration & Support",
+        p1: "We provide a full range of services for registration, opening, re-registration, and liquidation of sole proprietorships and companies in Kyrgyzstan. We work quickly, without errors and bureaucracy.",
+        h2_1: "📌 Main Services",
+        ulServices: [
+            "Choosing the optimal legal structure for your business;",
+            "Preparing all necessary documents for registration;",
+            "Supporting the registration process in government authorities (Ministry of Justice, tax service, state registry);",
+            "Re-registration or liquidation of companies if necessary;",
+            "Consultations on taxation, accounting, and business management;",
+            "Full legal support at all stages."
+        ],
+        h2_2: "📍 Why Work With Professionals",
+        p2: "Errors in documents or incorrect submissions can lead to registration refusal, fines, or wasted time. Our specialists know the current Kyrgyz legislation and minimize all risks.",
+        h2_3: "💡 Our Approach",
+        p3: "We work with individual entrepreneurs and companies, taking into account all legal nuances and interacting with government authorities on your behalf. This allows you to safely and quickly start a company and focus on business growth.",
+        backLink: "← Back to Home",
+        toggleBtn: "RU"
+    }
+};
+
+function setLanguage(lang) {
+    localStorage.setItem('siteLang', lang);
+    const t = translations[lang];
+    document.getElementById("header-title").innerText = t.headerTitle;
+    document.getElementById("p1").innerText = t.p1;
+    document.getElementById("h2-1").innerText = t.h2_1;
+
+    const ul = document.getElementById("ul-services");
+    ul.innerHTML = "";
+    t.ulServices.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+    });
+
+    document.getElementById("h2-2").innerText = t.h2_2;
+    document.getElementById("p2").innerText = t.p2;
+    document.getElementById("h2-3").innerText = t.h2_3;
+    document.getElementById("p3").innerText = t.p3;
+    document.getElementById("back-link").innerText = t.backLink;
+    document.getElementById("toggle-lang").innerText = t.toggleBtn;
+}
+
+// Инициализация языка при загрузке
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(savedLang);
+});
+
+// Переключение языка по кнопке
+document.getElementById("toggle-lang").addEventListener("click", () => {
+    const current = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(current === 'ru' ? 'en' : 'ru');
+});
+</script>
+
+</body>
+</html>

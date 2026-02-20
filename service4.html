@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Земельные и имущественные вопросы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f5f5;
+            color: #222;
+        }
+        .header {
+            background: #0d0d0d;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+        .service-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .service-detail h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service-detail h2 {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #0d0d0d;
+        }
+        .service-detail p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .service-detail ul {
+            margin-left: 20px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 id="header-title">Земельные и имущественные вопросы</h1>
+    <div class="lang-switch">
+        <button id="toggle-lang">EN</button>
+    </div>
+</div>
+
+<div class="service-detail">
+    <p id="p1">Мы оказываем профессиональные услуги по оформлению земельных участков, недвижимости и разрешению имущественных споров в Кыргызстане. Наши специалисты помогут безопасно зарегистрировать права собственности, подготовить документы и решить юридические вопросы.</p>
+
+    <h2 id="h2-1">📍 Оформление земельных участков</h2>
+    <p id="p2">Помогаем клиентам оформить земельные участки в соответствии с законодательством Кыргызской Республики:</p>
+    <ul id="ul-land">
+        <li>проверка правового статуса участка и кадастровых документов;</li>
+        <li>подготовка документов для государственной регистрации;</li>
+        <li>оформление земельных участков в частную собственность;</li>
+        <li>раздел или объединение земельных участков;</li>
+        <li>сопровождение сделок купли-продажи земли;</li>
+        <li>консультации по земельному законодательству Кыргызстана (Закон «О земле»).</li>
+    </ul>
+
+    <h2 id="h2-2">🏠 Имущественные вопросы</h2>
+    <p id="p3">Помощь в оформлении и управлении недвижимостью:</p>
+    <ul id="ul-property">
+        <li>регистрация права собственности на квартиры, дома, коммерческую недвижимость;</li>
+        <li>оформление совместного или наследственного имущества;</li>
+        <li>консультации по имущественным договорам, долевому участию;</li>
+        <li>проверка и оформление обременений и залогов;</li>
+        <li>представление интересов клиентов в спорах с соседями, арендаторами и третьими лицами;</li>
+        <li>подготовка документов для судебного урегулирования имущественных споров.</li>
+    </ul>
+
+    <h2 id="h2-3">⚖️ Почему важно работать с профессионалами</h2>
+    <p id="p4">Законодательство Кыргызской Республики требует строгого соблюдения правил оформления земли и имущества. Ошибки в документах могут привести к отказу в регистрации, штрафам или судебным разбирательствам. Наши специалисты помогут:</p>
+    <ul id="ul-professional">
+        <li>избежать ошибок при оформлении земельных и имущественных документов;</li>
+        <li>снизить риски конфликтов с государственными органами и другими владельцами;</li>
+        <li>проверить чистоту сделки и юридическую силу документов.</li>
+    </ul>
+
+    <h2 id="h2-4">📌 Дополнительные услуги</h2>
+    <ul id="ul-additional">
+        <li>консультации по вопросам земельного права;</li>
+        <li>юридическое сопровождение сделок с недвижимостью;</li>
+        <li>содействие в решении наследственных и имущественных споров;</li>
+        <li>подготовка договоров аренды и купли-продажи;</li>
+        <li>полное сопровождение сделок с коммерческой недвижимостью.</li>
+    </ul>
+
+    <a class="back-link" href="index.html" id="back-link">← Вернуться на главную</a>
+</div>
+
+<script>
+const translations = {
+    ru: {
+        headerTitle: "Земельные и имущественные вопросы",
+        p1: "Мы оказываем профессиональные услуги по оформлению земельных участков, недвижимости и разрешению имущественных споров в Кыргызстане. Наши специалисты помогут безопасно зарегистрировать права собственности, подготовить документы и решить юридические вопросы.",
+        h2_1: "📍 Оформление земельных участков",
+        p2: "Помогаем клиентам оформить земельные участки в соответствии с законодательством Кыргызской Республики:",
+        ulLand: [
+            "проверка правового статуса участка и кадастровых документов;",
+            "подготовка документов для государственной регистрации;",
+            "оформление земельных участков в частную собственность;",
+            "раздел или объединение земельных участков;",
+            "сопровождение сделок купли-продажи земли;",
+            "консультации по земельному законодательству Кыргызстана (Закон «О земле»)."
+        ],
+        h2_2: "🏠 Имущественные вопросы",
+        p3: "Помощь в оформлении и управлении недвижимостью:",
+        ulProperty: [
+            "регистрация права собственности на квартиры, дома, коммерческую недвижимость;",
+            "оформление совместного или наследственного имущества;",
+            "консультации по имущественным договорам, долевому участию;",
+            "проверка и оформление обременений и залогов;",
+            "представление интересов клиентов в спорах с соседями, арендаторами и третьими лицами;",
+            "подготовка документов для судебного урегулирования имущественных споров."
+        ],
+        h2_3: "⚖️ Почему важно работать с профессионалами",
+        p4: "Законодательство Кыргызской Республики требует строгого соблюдения правил оформления земли и имущества. Ошибки в документах могут привести к отказу в регистрации, штрафам или судебным разбирательствам. Наши специалисты помогут:",
+        ulProfessional: [
+            "избежать ошибок при оформлении земельных и имущественных документов;",
+            "снизить риски конфликтов с государственными органами и другими владельцами;",
+            "проверить чистоту сделки и юридическую силу документов."
+        ],
+        h2_4: "📌 Дополнительные услуги",
+        ulAdditional: [
+            "консультации по вопросам земельного права;",
+            "юридическое сопровождение сделок с недвижимостью;",
+            "содействие в решении наследственных и имущественных споров;",
+            "подготовка договоров аренды и купли-продажи;",
+            "полное сопровождение сделок с коммерческой недвижимостью."
+        ],
+        backLink: "← Вернуться на главную",
+        toggleBtn: "EN"
+    },
+    en: {
+        headerTitle: "Land and Property Issues",
+        p1: "We provide professional services for land plot registration, real estate, and resolution of property disputes in Kyrgyzstan. Our specialists help safely register property rights, prepare documents, and resolve legal issues.",
+        h2_1: "📍 Land Plot Registration",
+        p2: "We help clients register land plots in accordance with Kyrgyz law:",
+        ulLand: [
+            "verification of the legal status of the plot and cadastral documents;",
+            "preparation of documents for state registration;",
+            "registration of land plots into private ownership;",
+            "division or consolidation of land plots;",
+            "support in land sale and purchase transactions;",
+            "consultations on Kyrgyz land legislation (Law “On Land”)."
+        ],
+        h2_2: "🏠 Property Issues",
+        p3: "Assistance in property registration and management:",
+        ulProperty: [
+            "registration of ownership for apartments, houses, commercial real estate;",
+            "registration of joint or inherited property;",
+            "consultations on property agreements and shared ownership;",
+            "verification and registration of encumbrances and liens;",
+            "representation of clients in disputes with neighbors, tenants, and third parties;",
+            "preparation of documents for court resolution of property disputes."
+        ],
+        h2_3: "⚖️ Why It’s Important to Work with Professionals",
+        p4: "Kyrgyz legislation requires strict compliance with rules for land and property registration. Mistakes in documents can lead to registration refusal, fines, or litigation. Our specialists help to:",
+        ulProfessional: [
+            "avoid errors in land and property documents;",
+            "reduce risks of conflicts with government agencies and other owners;",
+            "verify transaction integrity and legal validity of documents."
+        ],
+        h2_4: "📌 Additional Services",
+        ulAdditional: [
+            "consultations on land law issues;",
+            "legal support for real estate transactions;",
+            "assistance in resolving inheritance and property disputes;",
+            "preparation of lease and sale contracts;",
+            "full support for commercial real estate transactions."
+        ],
+        backLink: "← Back to Home",
+        toggleBtn: "RU"
+    }
+};
+
+function setLanguage(lang) {
+    localStorage.setItem('siteLang', lang);
+    const t = translations[lang];
+    document.getElementById("header-title").innerText = t.headerTitle;
+    document.getElementById("p1").innerText = t.p1;
+    document.getElementById("h2-1").innerText = t.h2_1;
+    document.getElementById("p2").innerText = t.p2;
+
+    const ulLand = document.getElementById("ul-land");
+    ulLand.innerHTML = "";
+    t.ulLand.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulLand.appendChild(li);
+    });
+
+    document.getElementById("h2-2").innerText = t.h2_2;
+    document.getElementById("p3").innerText = t.p3;
+    const ulProperty = document.getElementById("ul-property");
+    ulProperty.innerHTML = "";
+    t.ulProperty.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulProperty.appendChild(li);
+    });
+
+    document.getElementById("h2-3").innerText = t.h2_3;
+    document.getElementById("p4").innerText = t.p4;
+    const ulProfessional = document.getElementById("ul-professional");
+    ulProfessional.innerHTML = "";
+    t.ulProfessional.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulProfessional.appendChild(li);
+    });
+
+    document.getElementById("h2-4").innerText = t.h2_4;
+    const ulAdditional = document.getElementById("ul-additional");
+    ulAdditional.innerHTML = "";
+    t.ulAdditional.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulAdditional.appendChild(li);
+    });
+
+    document.getElementById("back-link").innerText = t.backLink;
+    document.getElementById("toggle-lang").innerText = t.toggleBtn;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(savedLang);
+});
+
+document.getElementById("toggle-lang").addEventListener("click", () => {
+    const current = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(current === 'ru' ? 'en' : 'ru');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Нотариальные и бухгалтерские услуги</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f5f5;
+            color: #222;
+        }
+        .header {
+            background: #0d0d0d;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+        .service-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .service-detail h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service-detail h2 {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #0d0d0d;
+        }
+        .service-detail p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .service-detail ul {
+            margin-left: 20px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 id="header-title">Нотариальные и бухгалтерские услуги</h1>
+    <div class="lang-switch">
+        <button id="toggle-lang">EN</button>
+    </div>
+</div>
+
+<div class="service-detail">
+    <p id="p1">Мы предоставляем полный спектр нотариальных и бухгалтерских услуг для физических и юридических лиц в Кыргызстане. Наши специалисты помогут оформить документы правильно и в соответствии с законодательством, минимизируя риски ошибок и штрафов.</p>
+
+    <h2 id="h2-1">📑 Нотариальные услуги</h2>
+    <p id="p2">Наши нотариусы сопровождают:</p>
+    <ul id="ul-notary">
+        <li>составление и удостоверение договоров купли-продажи, аренды и дарения;</li>
+        <li>подтверждение доверенностей и полномочий;</li>
+        <li>заверение копий документов и подписей;</li>
+        <li>составление завещаний и наследственных договоров;</li>
+        <li>нотариальное оформление сделок с недвижимостью в соответствии с законодательством Кыргызской Республики;</li>
+        <li>консультации по вопросам нотариальных процедур и государственной регистрации.</li>
+    </ul>
+
+    <h2 id="h2-2">💼 Бухгалтерские услуги</h2>
+    <p id="p3">Мы предоставляем бухгалтерское сопровождение для бизнеса любого масштаба:</p>
+    <ul id="ul-accounting">
+        <li>ведение бухгалтерского учета и финансовой отчетности;</li>
+        <li>подготовка и сдача налоговых деклараций;</li>
+        <li>оптимизация налогообложения в рамках законодательства Кыргызской Республики;</li>
+        <li>консультации по вопросам налогообложения и финансов;</li>
+        <li>составление отчетности для госорганов, включая налоговую службу и статистику;</li>
+        <li>поддержка при проверках и аудитах государственных органов.</li>
+    </ul>
+
+    <h2 id="h2-3">📍 Почему важно работать с профессионалами</h2>
+    <p id="p4">Законы Кыргызской Республики обязывают правильно оформлять нотариальные документы и вести бухгалтерский учет для ИП, ОсОО и других организаций. Ошибки в документах или отчётности могут привести к штрафам, блокировке счетов и проблемам с налоговой.</p>
+
+    <p id="p5">Наш опыт работы с госорганами Бишкек, Ош и других регионов позволяет безопасно и быстро оформлять все необходимые документы.</p>
+
+    <h2 id="h2-4">📌 Дополнительные услуги</h2>
+    <ul id="ul-additional">
+        <li>регистрация ИП и ОсОО с полным сопровождением бухгалтерии;</li>
+        <li>консультации по налоговому законодательству;</li>
+        <li>подготовка финансовой отчетности для инвесторов и банков;</li>
+        <li>консультации по наследственным и имущественным вопросам;</li>
+        <li>сопровождение нотариальных сделок удаленно для удобства клиентов.</li>
+    </ul>
+
+    <a class="back-link" href="index.html" id="back-link">← Вернуться на главную</a>
+</div>
+
+<script>
+const translations = {
+    ru: {
+        headerTitle: "Нотариальные и бухгалтерские услуги",
+        p1: "Мы предоставляем полный спектр нотариальных и бухгалтерских услуг для физических и юридических лиц в Кыргызстане. Наши специалисты помогут оформить документы правильно и в соответствии с законодательством, минимизируя риски ошибок и штрафов.",
+        h2_1: "📑 Нотариальные услуги",
+        p2: "Наши нотариусы сопровождают:",
+        ulNotary: [
+            "составление и удостоверение договоров купли-продажи, аренды и дарения;",
+            "подтверждение доверенностей и полномочий;",
+            "заверение копий документов и подписей;",
+            "составление завещаний и наследственных договоров;",
+            "нотариальное оформление сделок с недвижимостью в соответствии с законодательством Кыргызской Республики;",
+            "консультации по вопросам нотариальных процедур и государственной регистрации."
+        ],
+        h2_2: "💼 Бухгалтерские услуги",
+        p3: "Мы предоставляем бухгалтерское сопровождение для бизнеса любого масштаба:",
+        ulAccounting: [
+            "ведение бухгалтерского учета и финансовой отчетности;",
+            "подготовка и сдача налоговых деклараций;",
+            "оптимизация налогообложения в рамках законодательства Кыргызской Республики;",
+            "консультации по вопросам налогообложения и финансов;",
+            "составление отчетности для госорганов, включая налоговую службу и статистику;",
+            "поддержка при проверках и аудитах государственных органов."
+        ],
+        h2_3: "📍 Почему важно работать с профессионалами",
+        p4: "Законы Кыргызской Республики обязывают правильно оформлять нотариальные документы и вести бухгалтерский учет для ИП, ОсОО и других организаций. Ошибки в документах или отчётности могут привести к штрафам, блокировке счетов и проблемам с налоговой.",
+        p5: "Наш опыт работы с госорганами Бишкек, Ош и других регионов позволяет безопасно и быстро оформлять все необходимые документы.",
+        h2_4: "📌 Дополнительные услуги",
+        ulAdditional: [
+            "регистрация ИП и ОсОО с полным сопровождением бухгалтерии;",
+            "консультации по налоговому законодательству;",
+            "подготовка финансовой отчетности для инвесторов и банков;",
+            "консультации по наследственным и имущественным вопросам;",
+            "сопровождение нотариальных сделок удаленно для удобства клиентов."
+        ],
+        backLink: "← Вернуться на главную",
+        toggleBtn: "EN"
+    },
+    en: {
+        headerTitle: "Notary and Accounting Services",
+        p1: "We provide a full range of notary and accounting services for individuals and businesses in Kyrgyzstan. Our specialists help prepare documents correctly and in accordance with the law, minimizing errors and fines.",
+        h2_1: "📑 Notary Services",
+        p2: "Our notaries assist with:",
+        ulNotary: [
+            "drafting and certifying sales, lease, and gift contracts;",
+            "verification of powers of attorney and authorizations;",
+            "certification of document copies and signatures;",
+            "preparation of wills and inheritance agreements;",
+            "notarization of real estate transactions in accordance with Kyrgyz law;",
+            "consultations on notary procedures and state registration."
+        ],
+        h2_2: "💼 Accounting Services",
+        p3: "We provide accounting support for businesses of any size:",
+        ulAccounting: [
+            "bookkeeping and financial reporting;",
+            "preparation and submission of tax declarations;",
+            "tax optimization within the framework of Kyrgyz legislation;",
+            "consultations on taxation and finance;",
+            "preparation of reports for government agencies, including the tax office and statistics;",
+            "support during inspections and audits by state authorities."
+        ],
+        h2_3: "📍 Why It’s Important to Work with Professionals",
+        p4: "Kyrgyz law requires proper notarization of documents and accounting for businesses. Mistakes in documents or reporting can lead to fines, account blocks, and issues with the tax authorities.",
+        p5: "Our experience working with government agencies in Bishkek, Osh, and other regions allows us to prepare all necessary documents safely and efficiently.",
+        h2_4: "📌 Additional Services",
+        ulAdditional: [
+            "registration of individual entrepreneurs and LLCs with full accounting support;",
+            "consultations on tax legislation;",
+            "preparation of financial reports for investors and banks;",
+            "consultations on inheritance and property issues;",
+            "remote notary support for client convenience."
+        ],
+        backLink: "← Back to Home",
+        toggleBtn: "RU"
+    }
+};
+
+function setLanguage(lang) {
+    localStorage.setItem('siteLang', lang);
+    const t = translations[lang];
+    document.getElementById("header-title").innerText = t.headerTitle;
+    document.getElementById("p1").innerText = t.p1;
+    document.getElementById("h2-1").innerText = t.h2_1;
+    document.getElementById("p2").innerText = t.p2;
+
+    const ulNotary = document.getElementById("ul-notary");
+    ulNotary.innerHTML = "";
+    t.ulNotary.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulNotary.appendChild(li);
+    });
+
+    document.getElementById("h2-2").innerText = t.h2_2;
+    document.getElementById("p3").innerText = t.p3;
+    const ulAccounting = document.getElementById("ul-accounting");
+    ulAccounting.innerHTML = "";
+    t.ulAccounting.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulAccounting.appendChild(li);
+    });
+
+    document.getElementById("h2-3").innerText = t.h2_3;
+    document.getElementById("p4").innerText = t.p4;
+    document.getElementById("p5").innerText = t.p5;
+
+    document.getElementById("h2-4").innerText = t.h2_4;
+    const ulAdditional = document.getElementById("ul-additional");
+    ulAdditional.innerHTML = "";
+    t.ulAdditional.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ulAdditional.appendChild(li);
+    });
+
+    document.getElementById("back-link").innerText = t.backLink;
+    document.getElementById("toggle-lang").innerText = t.toggleBtn;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(savedLang);
+});
+
+document.getElementById("toggle-lang").addEventListener("click", () => {
+    const current = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(current === 'ru' ? 'en' : 'ru');
+});
+</script>
+
+</body>
+</html>
