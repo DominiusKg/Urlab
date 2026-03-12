@@ -252,4 +252,18 @@ body.loaded {
 .lang-switch button:hover {
     background: #333;
 }
+.seo-text{
+padding:60px 20px;
+background:#8e4343;
+font-size:16px;
+line-height:1.7;
+border-radius:16px;
+margin:40px auto;
+max-width:1100px;
+}
+
+.seo-text h2{
+margin-top:30px;
+font-size:24px;
+}
 
